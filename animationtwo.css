@@ -1,0 +1,97 @@
+*{
+    cursor: pointer;
+}
+#DYS{
+    width: 300px;
+    height: 300px;
+    background-color: orange;
+    animation-name: DYS;
+    animation-duration: 6s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+
+#DYS h1{
+    padding-top:100px;
+    padding-left: 60px;
+}
+
+@keyframes DYS{
+from{
+    background-color: red;
+}
+to{ background-color: blue;}
+}
+
+#cool{
+    width: 300px;
+    height: 300px;
+    background-color: grey;
+    position: relative;
+    animation-name: cool;
+    animation-duration: 6s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+
+#cool h1{
+    padding-top: 150px;
+    padding-left: 70px;
+    font-size: 50px;
+}
+
+@keyframes cool{
+    0% {
+        background-color:red;
+        left: 0px; top:0px;
+    }
+
+    25% {
+        background-color:blue;
+        left: 200px; top: 0px;
+    }
+
+    50% {
+        background-color:green;
+        left: 200px; top: 200px;
+    }
+
+    75% {
+        background-color:yellow;
+        left: 0px; top:200px ;}
+
+        100% {
+            background-color:purple;
+            left: 0px; top: 0px;
+        }
+    }
+
+    #expand{
+        width: 300px;
+        height: 300px;
+        background-color: red;
+        transition: width 2s, height 2s, transform 2s;
+        float: right;
+        transform: translateY(-150%);
+        margin-right: 100px;
+        animation-name: spin;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;
+    }
+
+    #expand:hover{
+        width: 500px;
+    }
+
+    #expand h1{
+        padding-top: 80px;
+        padding-left: 70px;
+        font-size: 50px;
+    }
+
+    @keyframes spin{
+        from{
+            background-color: yellow;
+        }
+        to{ background-color: blue;}
+        }
